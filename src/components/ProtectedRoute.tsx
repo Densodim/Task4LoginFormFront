@@ -1,11 +1,11 @@
-import type { ReactNode } from "react";
-import { useAuthCheck } from "../hooks/useAuthCheck";
+import type { ReactNode } from "react"
+import { useAuthCheck } from "../hooks/useAuthCheck"
 
 type ProtectedRouteProps = {
-  children: ReactNode;
-};
+	children: ReactNode
+}
 
 export const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
-  useAuthCheck();
-  return <>{children}</>;
-};
+	useAuthCheck()
+	return <>{children}</>
+}
